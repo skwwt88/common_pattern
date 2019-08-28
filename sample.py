@@ -47,3 +47,26 @@ print(inputs)
 
 inputs = {k: v for k, v in inputs.items() if k > 5 and v < 7}
 print(inputs)
+
+#set
+inputs = set()
+inputs = {3, 2}
+print(len(inputs))
+outputs = [i for i in inputs]
+print(outputs)
+inputs.add(4)
+inputs.add(4)
+print(inputs)
+inputs.difference_update({2, 1})
+print(inputs)
+inputs = inputs.union([3, 4, 5])
+inputs = inputs.union({6})
+print(inputs)
+print(inputs.intersection({3, 5, 2, 1}))
+inputs.remove(6)
+print(inputs)
+print({i: i + 1 for i in inputs if i > 4})
+if 6 in inputs:
+    print(True)
+else:
+    print(False)
